@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive News Website with News, Opinion, and Infographics">
+    <meta name="keywords" content="News, Opinion, Infographics, GhanaWeb, CitiNewsRoom">
+    <meta name="author" content="Sumaila Mohammed">
+    <title>Interactive News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .breaking-news {
+            background-color: #FF4500; /* Eye-catching red-orange color */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .breaking-news marquee {
+            font-size: 1.1em;
+        }
+        header {
+            background-color: #4B0082; /* Purple for CitiNewsRoom's color scheme */
+            color: white;
+            padding: 10px 20px;
+        }
+        .search-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .search-bar {
+            width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        main {
+            padding: 20px;
+        }
+        .featured-news {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .featured-news h2 {
+            margin-top: 0;
+            color: #4B0082; /* CitiNewsRoom purple */
+        }
+        .latest-articles {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .latest-articles .articles {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        aside {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        footer {
+            background-color: #4B0082;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="breaking-news">
+        <marquee behavior="scroll" direction="left">
+            Breaking News: Major updates on politics, sports, and more! Stay tuned.
+        </marquee>
+    </div>
+    <header>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li><a href="#opinion">Opinion</a></li>
+                <li><a href="#infographics">Infographics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-news">
+            <h2>Featured News</h2>
+            <p>Top story headline goes here with an engaging introduction.</p>
+        </section>
+        <div class="latest-articles">
+            <div class="articles">
+                <h3>Latest Articles</h3>
+                <p>Article 1 headline...</p>
+                <p>Article 2 headline...</p>
+                <p>Article 3 headline...</p>
+            </div>
+            <aside>
+                <h3>Trending Topics</h3>
+                <ul>
+                    <li>Topic 1</li>
+                    <li>Topic 2</li>
+                    <li>Topic 3</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+        </div>
+        <p>&copy; 2024 My News Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
